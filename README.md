@@ -1,13 +1,14 @@
 # 🎬 Web Motion
-> Create stunning motion graphics directly in your browser.
+
+> Professional motion graphics and video editing directly in your browser.
 
 ![Version](https://img.shields.io/badge/version-0.1.0-blue)
-![Status](https://img.shields.io/badge/status-development-orange)
+![Status](https://img.shields.io/badge/status-in%20development-orange)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
-MotionFlow is a browser-based motion graphics and video editing application inspired by Alight Motion.
+Web Motion is a web-based motion graphics editor inspired by modern video editing software such as Alight Motion, After Effects, and CapCut.
 
-Create animations, edit videos, add effects, and export projects without installing any software.
+Create animations, edit videos, add visual effects, and export projects — all without installing anything.
 
 ---
 
@@ -15,11 +16,11 @@ Create animations, edit videos, add effects, and export projects without install
 
 ### 🎞 Video Editing
 - Import videos
-- Trim and cut clips
-- Multiple layers
 - Timeline editor
+- Layer management
+- Clip trimming
 
-### 🎨 Graphics
+### 🎨 Design Tools
 - Text layers
 - Shape layers
 - Image layers
@@ -27,48 +28,48 @@ Create animations, edit videos, add effects, and export projects without install
 
 ### ⚡ Animation
 - Keyframes
-- Fade In / Fade Out
-- Scale Animation
-- Rotation Animation
-- Position Animation
+- Opacity animation
+- Position animation
+- Scale animation
+- Rotation animation
 
 ### 🎵 Audio
-- Import audio files
+- Audio import
 - Audio timeline
-- Volume control
+- Volume controls
 
 ### 📤 Export
-- MP4 Export
-- GIF Export (Planned)
-- Project Save/Load
+- MP4 export
+- Project save/load
+- High-quality rendering
 
 ---
 
-## 📸 Preview
+## 📸 Screenshots
 
 Coming soon...
 
 ---
 
-## 🛠 Tech Stack
+## 🛠 Built With
 
-| Technology | Purpose |
-|------------|----------|
-| HTML5 | Structure |
-| CSS3 | Styling |
-| JavaScript | Logic |
-| Canvas API | Rendering |
-| FFmpeg WASM | Video Processing |
-| WebGL | Advanced Effects |
+- HTML5
+- CSS3
+- JavaScript
+- Canvas API
+- FFmpeg WASM
+- WebGL
 
 ---
 
 ## 📂 Project Structure
 
 ```text
-motionflow/
+web-motion/
 │
 ├── index.html
+├── README.md
+│
 ├── css/
 │   └── style.css
 │
@@ -79,38 +80,31 @@ motionflow/
 │   ├── effects.js
 │   └── export.js
 │
-├── assets/
-│   ├── icons/
-│   ├── images/
-│   └── fonts/
-│
-└── README.md
+└── assets/
+    ├── images/
+    ├── icons/
+    └── fonts/
 ```
 
 ---
 
 ## 🚀 Getting Started
 
-### Clone Repository
+### Clone the repository
 
 ```bash
-git clone https://github.com/yourname/motionflow.git
+git clone https://github.com/yourusername/web-motion.git
 ```
 
-### Open Project
+### Open the project
 
 ```bash
-cd motionflow
+cd web-motion
 ```
 
-### Run
+### Run locally
 
-Use:
-
-- VS Code
-- Live Server Extension
-
-Then open:
+Open with VS Code and start Live Server.
 
 ```text
 http://localhost:5500
@@ -121,27 +115,29 @@ http://localhost:5500
 ## 🎯 Roadmap
 
 ### Version 0.1
+- [x] Project setup
 - [x] Basic UI
-- [x] Timeline
-- [ ] Video Import
-- [ ] Text Layers
+- [ ] Canvas preview
+- [ ] Timeline
 
 ### Version 0.5
+- [ ] Layer system
 - [ ] Keyframes
-- [ ] Effects
-- [ ] Audio Layers
+- [ ] Video import
+- [ ] Audio import
 
 ### Version 1.0
-- [ ] Export MP4
-- [ ] Project Save
-- [ ] Mobile Support
+- [ ] Effects engine
+- [ ] MP4 export
+- [ ] Project saving
+- [ ] Mobile support
 
-### Future
-- [ ] Motion Blur
-- [ ] Chroma Key
-- [ ] Particle System
-- [ ] 3D Camera
-- [ ] Cloud Projects
+### Future Plans
+- [ ] Motion blur
+- [ ] Chroma key
+- [ ] Particle effects
+- [ ] Cloud projects
+- [ ] Plugin support
 
 ---
 
@@ -149,10 +145,10 @@ http://localhost:5500
 
 Contributions are welcome!
 
-1. Fork the project
+1. Fork the repository
 2. Create a feature branch
 3. Commit your changes
-4. Open a Pull Request
+4. Submit a Pull Request
 
 ---
 
@@ -162,9 +158,8 @@ This project is licensed under the MIT License.
 
 ---
 
-## 💜 Inspiration
+## 💡 Inspiration
 
-Inspired by:
 - Alight Motion
 - Adobe After Effects
 - CapCut
@@ -172,4 +167,4 @@ Inspired by:
 
 ---
 
-### ⭐ If you like this project, give it a star!
+### ⭐ Star this project if you find it interesting!
