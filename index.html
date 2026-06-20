@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Web Motion</title>
+<link rel="stylesheet" href="css/style.css"/>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">🎬 Web Motion</div>
+
+    <div class="header-actions">
+        <button id="addKeyframeBtn">➕ Keyframe</button>
+        <button id="headerPlayBtn">▶ Play</button>
+        <button class="export-btn">Export</button>
+    </div>
+</header>
+
+<main>
+
+<!-- TOOLBAR -->
+<aside class="toolbar">
+
+    <div class="tool active" id="selectTool">🖱️ Select</div>
+    <div class="tool" id="textTool">🔤 Text</div>
+    <div class="tool" id="shapeTool">🟦 Shape</div>
+
+</aside>
+
+<aside class="layers-panel">
+
+    <h2>Layers</h2>
+
+    <div id="layersList">
+
+        <div class="empty-layers">
+            No layers
+        </div>
+
+    </div>
+
+</aside>
+
+<!-- PREVIEW -->
+<section class="preview-section">
+
+    <div class="phone-frame">
+
+        <canvas
+            id="previewCanvas"
+            width="1080"
+            height="1920">
+        </canvas>
+
+    </div>
+
+</section>
+
+<!-- PROPERTIES -->
+<aside class="properties">
+    <h2>Properties</h2>
+
+    <div id="propertiesPanel">
+
+        <label>Name</label>
+        <input id="layerName" type="text" placeholder="Layer Name"/>
+        <label>X</label>
+        <input id="layerX" type="number" placeholder="X"/>
+        <label>Y</label>
+        <input id="layerY" type="number" placeholder="Y"/>
+        <label>Width</label>
+        <input id="layerWidth" type="number" placeholder="Width"/>
+        <label>Height</label>
+        <input id="layerHeight" type="number" placeholder="Height"/>
+        <label>Text</label>
+        <input id="layerText" type="text" placeholder="Text"/>
+
+    </div>
+</aside>
+
+</main>
+
+<!-- TIMELINE -->
+<section class="timeline">
+
+    <div class="timeline-header">
+
+<button id="timelinePlayBtn">
+    ▶
+</button>
+
+        <span id="currentTimeLabel">
+            0.00s
+        </span>
+
+    </div>
+
+<div id="timelineTracks">
+
+    <div class="empty-timeline">
+
+        No keyframes
+
+    </div>
+
+</div>
+
+</section>
+
+<!-- SHAPE MENU -->
+<div id="shapeMenu" class="hidden">
+
+    <button id="rectangleBtn" data-shape="rectangle">
+
+        Rectangle
+
+    </button>
+
+    <button
+        id="circleBtn"
+        data-shape="circle">
+
+        Circle
+
+    </button>
+
+    <button
+        id="triangleBtn"
+        data-shape="triangle">
+
+        Triangle
+
+    </button>
+
+</div>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>

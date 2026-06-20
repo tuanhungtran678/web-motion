@@ -1,0 +1,233 @@
+body{
+margin:0;
+font-family:Arial;
+background:#0f172a;
+color:white;
+overflow:hidden;
+}
+
+header{
+height:60px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:0 15px;
+background:#111827;
+}
+
+main{
+display:flex;
+height:calc(100vh - 120px);
+}
+
+.toolbar{
+width:80px;
+background:#1f2937;
+display:flex;
+flex-direction:column;
+align-items:center;
+padding:10px;
+gap:10px;
+}
+
+.tool{
+padding:10px;
+cursor:pointer;
+}
+
+.preview-section{
+flex:1;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+canvas{
+width:300px;
+height:500px;
+background:black;
+border-radius:10px;
+}
+
+.properties{
+width:250px;
+background:#1f2937;
+padding:10px;
+}
+
+.timeline{
+height:60px;
+background:#111827;
+padding:5px;
+overflow-x:auto;
+white-space:nowrap;
+}
+
+#shapeMenu{
+position:absolute;
+top:100px;
+left:100px;
+background:#1f2937;
+padding:10px;
+}
+
+.hidden{display:none;}
+
+.phone-frame{
+    width:320px;
+    height:570px;
+
+    background:#111827;
+
+    border-radius:30px;
+
+    padding:10px;
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,.4);
+}
+
+#previewCanvas{
+    width:100%;
+    height:100%;
+
+    border-radius:20px;
+
+    background:black;
+}
+
+/* ===================== */
+/* LAYERS PANEL */
+/* ===================== */
+
+.layers-panel{
+width:220px;
+background:#1f2937;
+padding:10px;
+border-right:1px solid #374151;
+
+overflow-y:auto;
+}
+
+.layers-panel h2{
+margin-top:0;
+font-size:18px;
+}
+
+#layersList{
+display:flex;
+flex-direction:column;
+gap:8px;
+}
+
+.empty-layers{
+opacity:.6;
+font-size:14px;
+}
+
+/* ===================== */
+/* PROPERTIES */
+/* ===================== */
+
+.properties h2{
+margin-top:0;
+}
+
+#propertiesPanel{
+display:flex;
+flex-direction:column;
+gap:8px;
+}
+
+#propertiesPanel label{
+font-size:13px;
+opacity:.8;
+}
+
+#propertiesPanel input{
+padding:8px;
+border:none;
+border-radius:8px;
+
+background:#111827;
+color:white;
+}
+
+/* ===================== */
+/* TIMELINE */
+/* ===================== */
+
+.timeline{
+height:180px;
+
+background:#111827;
+
+border-top:
+1px solid #374151;
+
+display:flex;
+flex-direction:column;
+}
+
+.timeline-header{
+height:40px;
+
+display:flex;
+align-items:center;
+gap:10px;
+
+padding:0 10px;
+
+border-bottom:
+1px solid #374151;
+}
+
+#timelineTracks{
+flex:1;
+
+padding:10px;
+
+overflow:auto;
+}
+
+.empty-timeline{
+opacity:.6;
+}
+
+/* ===================== */
+/* SHAPE MENU */
+/* ===================== */
+
+#shapeMenu{
+
+display:flex;
+flex-direction:column;
+gap:5px;
+
+min-width:140px;
+
+border-radius:10px;
+
+box-shadow:
+0 10px 30px rgba(0,0,0,.4);
+}
+
+#shapeMenu button{
+
+padding:8px;
+
+border:none;
+
+cursor:pointer;
+
+background:#374151;
+
+color:white;
+
+border-radius:6px;
+}
+
+#shapeMenu button:hover{
+
+background:#4b5563;
+}
